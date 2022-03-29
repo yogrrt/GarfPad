@@ -1,22 +1,27 @@
-# MIDI-Keyboard
- Macropad with rotary encoder, slide potentiometer, and OLED screen.
+# garfpad
 
- This ReadMe will be updated as the project moves along, and will (hopefully) be posted to the larger collection by Help-14 when I feel more confident.
+![garfpad](imgur.com image replace me!)
 
-# Hardware
+*A short description of the keyboard/project*
 
-This little macropad is intended for use with the Elite-C V4. I'm not 100% sure on backwards compatability, but I am using some of the extra broken out pins so using a regular ProMicro will not work.
+* Keyboard Maintainer: [Garrett Lilley](https://github.com/yogrrt)
+* Hardware Supported: *The PCBs, controllers supported*
+* Hardware Availability: *Links to where you can find this hardware*
 
-Rev 1 had a white backlighting scheme with a transistor driving the LEDs, while the most recent revision uses SK6812 MINI-E RGB LEDs for maximum gamer productivity.
+Make example for this keyboard (after setting up your build environment):
 
-The OLED is a standard 128 x 32 I2C module that is compatable with QMK, but the larger 128 x 64 version would also work just fine.
+    make garfpad:default
 
-The EC11 encoder optionally can be used as another switch. You don't need to have it, and you can disable that switch in QMK, but it's pretty essential for the functionality out of the box.
+Flashing example for this keyboard:
 
-# Who is this for?
+    make garfpad:default:flash
 
-Good question. This was mainly built as a substitute for the MidiFighter 3D. I had no reason to use the 3D capability, and I wanted to be able to change the feel of the switches since arcade buttons don't really appeal to me as much. The MidiFighter is also pretty chunky, and I'm on the move a lot, so I wanted something that would be slim and nearly pocketable. 
+See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_tools) and the [make instructions](https://docs.qmk.fm/#/getting_started_make_guide) for more information. Brand new to QMK? Start with our [Complete Newbs Guide](https://docs.qmk.fm/#/newbs).
 
-# How do I make one?
+## Bootloader
 
-I'll get back to you on that.
+Enter the bootloader in 3 ways:
+
+* **Bootmagic reset**: Hold down the key at (0,0) in the matrix (usually the top left key or Escape) and plug in the keyboard
+* **Physical reset button**: Briefly press the button on the back of the PCB - some may have pads you must short instead
+* **Keycode in layout**: Press the key mapped to `RESET` if it is available
