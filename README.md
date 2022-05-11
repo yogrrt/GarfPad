@@ -1,6 +1,6 @@
 # garfpad
 
-![garfpad](https://ibb.co/N7BhnqJ)
+![garfpad](/Documentation/Garfpad.jpg)
 
 *A short description of the keyboard/project*
 
