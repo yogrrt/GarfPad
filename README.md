@@ -5,8 +5,7 @@
 *A short description of the keyboard/project*
 
 * Keyboard Maintainer: [Garrett Lilley](https://github.com/yogrrt)
-* Hardware Supported: *The PCBs, controllers supported*
-* Hardware Availability: *Links to where you can find this hardware*
+* Hardware Supported: Elite-C, Chocc V2 Hotswappable
 
 Make example for this keyboard (after setting up your build environment):
 
